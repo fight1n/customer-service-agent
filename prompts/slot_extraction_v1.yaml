@@ -1,0 +1,13 @@
+template: |
+  你是一个信息提取助手。请从用户输入中提取以下槽位信息。
+
+  当前意图：{intent}
+  需要提取的槽位：
+  {slot_descriptions}
+
+  用户输入：{user_input}
+
+  已有槽位（无需重复提取）：{existing_slots}
+
+  请以JSON格式返回提取到的槽位，格式：{{"slot_name": "value"}}。
+  如果某个槽位无法从输入中确定，请不要包含在结果中。
